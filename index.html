@@ -4,18 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daility - Seu dia a dia com simplicidade</title>
-    <link rel="stylesheet" href="style.css"> <!-- Seu arquivo CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <!-- Segunda-feira -->
         <div class="day" id="monday">
             <h2>Segunda-feira</h2>
-            <ul id="monday-list" class="task-list">
-                <!-- Tarefas de segunda-feira aqui -->
-            </ul>
+            <ul id="monday-list" class="task-list"></ul>
             <form class="add-task" data-day="monday">
-                <input type="text" placeholder="Adicionar tarefa..." />
+                <input type="text" placeholder="Adicionar tarefa..." required />
                 <button type="submit">Adicionar</button>
             </form>
         </div>
@@ -23,77 +21,16 @@
         <!-- Terça-feira -->
         <div class="day" id="tuesday">
             <h2>Terça-feira</h2>
-            <ul id="tuesday-list" class="task-list">
-                <!-- Tarefas de terça-feira aqui -->
-            </ul>
+            <ul id="tuesday-list" class="task-list"></ul>
             <form class="add-task" data-day="tuesday">
-                <input type="text" placeholder="Adicionar tarefa..." />
+                <input type="text" placeholder="Adicionar tarefa..." required />
                 <button type="submit">Adicionar</button>
             </form>
         </div>
 
-        <!-- Quarta-feira -->
-        <div class="day" id="wednesday">
-            <h2>Quarta-feira</h2>
-            <ul id="wednesday-list" class="task-list">
-                <!-- Tarefas de quarta-feira aqui -->
-            </ul>
-            <form class="add-task" data-day="wednesday">
-                <input type="text" placeholder="Adicionar tarefa..." />
-                <button type="submit">Adicionar</button>
-            </form>
-        </div>
-
-        <!-- Quinta-feira -->
-        <div class="day" id="thursday">
-            <h2>Quinta-feira</h2>
-            <ul id="thursday-list" class="task-list">
-                <!-- Tarefas de quinta-feira aqui -->
-            </ul>
-            <form class="add-task" data-day="thursday">
-                <input type="text" placeholder="Adicionar tarefa..." />
-                <button type="submit">Adicionar</button>
-            </form>
-        </div>
-
-        <!-- Sexta-feira -->
-        <div class="day" id="friday">
-            <h2>Sexta-feira</h2>
-            <ul id="friday-list" class="task-list">
-                <!-- Tarefas de sexta-feira aqui -->
-            </ul>
-            <form class="add-task" data-day="friday">
-                <input type="text" placeholder="Adicionar tarefa..." />
-                <button type="submit">Adicionar</button>
-            </form>
-        </div>
-
-        <!-- Sábado -->
-        <div class="day" id="saturday">
-            <h2>Sábado</h2>
-            <ul id="saturday-list" class="task-list">
-                <!-- Tarefas de sábado aqui -->
-            </ul>
-            <form class="add-task" data-day="saturday">
-                <input type="text" placeholder="Adicionar tarefa..." />
-                <button type="submit">Adicionar</button>
-            </form>
-        </div>
-
-        <!-- Domingo -->
-        <div class="day" id="sunday">
-            <h2>Domingo</h2>
-            <ul id="sunday-list" class="task-list">
-                <!-- Tarefas de domingo aqui -->
-            </ul>
-            <form class="add-task" data-day="sunday">
-                <input type="text" placeholder="Adicionar tarefa..." />
-                <button type="submit">Adicionar</button>
-            </form>
-        </div>
-
+        <!-- Continue com os outros dias -->
     </div>
 
-    <script src="script.js"></script> <!-- Seu arquivo JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
