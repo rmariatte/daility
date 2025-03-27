@@ -16,13 +16,15 @@ body {
     margin-bottom: 30px;
     padding: 20px;
     border-radius: 8px;
-    background-color: #f9f9f9;
+    background-color: #fff8e1; /* Marrom claro */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 15px;
 }
 
 h2 {
-    color: #5d4037;
+    color: #5d4037; /* Marrom escuro */
     font-size: 1.5em;
+    margin-bottom: 10px;
 }
 
 .task-list {
@@ -46,6 +48,7 @@ button {
     padding: 5px 10px;
     border-radius: 5px;
     cursor: pointer;
+    border: none;
 }
 
 button:hover {
@@ -62,4 +65,20 @@ button:hover {
 
 .add-task button {
     padding: 10px 20px;
+}
+
+.add-task {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.add-task input:focus {
+    outline: none;
+    border-color: #ff7043; /* Cor de foco no campo de input */
+}
+
+.add-task button:focus {
+    outline: none;
+    background-color: #ff5722;
 }
