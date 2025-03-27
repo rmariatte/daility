@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotina Diária</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Rotina Diária</h1>
+        
+        <!-- Seção para Exibir a Rotina -->
+        <div id="displayRoutine">
+            <h2>Rotina Atual</h2>
+            <ul id="routineList">
+                <!-- As rotinas serão exibidas aqui -->
+            </ul>
+        </div>
+
+        <!-- Seção para Editar a Rotina -->
+        <div id="editRoutine">
+            <h2>Editar Rotina</h2>
+            <form id="routineForm">
+                <label for="task">Tarefa:</label>
+                <input type="text" id="task" required>
+
+                <label for="time">Hora:</label>
+                <input type="time" id="time" required>
+
+                <button type="submit">Adicionar Tarefa</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
