@@ -43,6 +43,6 @@ function addTaskToDay(day, taskText) {
     });
     
     taskItem.querySelector('.delete-btn').addEventListener('click', () => {
-        dayList.removeChild(taskItem);
+        taskItem.remove();
     });
 }
