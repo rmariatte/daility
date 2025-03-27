@@ -1,84 +1,161 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-    color: #333;
+/* Resetando margens e paddings */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
+/* Corpo do site */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    color: #3e2723; /* Marrom escuro */
+    margin: 0;
+}
+
+/* Header */
+header {
+    background-color: #3e2723; /* Marrom escuro */
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+}
+
+header h1 {
+    font-size: 3em;
+    letter-spacing: 2px;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+/* Container de todos os dias */
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
+    max-width: 1100px;
+    margin: 20px auto;
     padding: 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
+/* Estilo para cada dia */
 .day {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     padding: 20px;
-    border-radius: 8px;
-    background-color: #fff8e1; /* Marrom claro */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    background-color: #fff;
     margin-top: 15px;
 }
 
 h2 {
-    color: #5d4037; /* Marrom escuro */
-    font-size: 1.5em;
-    margin-bottom: 10px;
+    font-size: 2em;
+    color: #5d4037; /* Marrom claro */
+    margin-bottom: 15px;
 }
 
+/* Lista de tarefas */
 .task-list {
-    list-style-type: none;
+    list-style: none;
+    margin: 15px 0;
     padding: 0;
 }
 
+/* Tarefa individual */
 .task-item {
-    background-color: #fff3e0;
+    background-color: #ffe0b2; /* Marrom claro */
     padding: 10px;
     margin: 10px 0;
     border-radius: 8px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
-button {
+.task-item button {
     background-color: #ff7043;
     color: white;
-    padding: 5px 10px;
-    border-radius: 5px;
-    cursor: pointer;
+    padding: 6px 12px;
+    border-radius: 50px;
     border: none;
+    cursor: pointer;
 }
 
-button:hover {
+.task-item button:hover {
     background-color: #e64a19;
 }
 
-.add-task input {
-    padding: 10px;
-    margin-right: 10px;
-    width: 80%;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+button {
+    font-size: 0.9em;
+    color: white;
+    background-color: #3e2723;
+    padding: 12px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s;
 }
 
-.add-task button {
-    padding: 10px 20px;
+button:hover {
+    background-color: #ff7043;
 }
 
+/* Formulário de adicionar tarefa */
 .add-task {
     display: flex;
     align-items: center;
-    margin-top: 10px;
+    margin-top: 15px;
+}
+
+.add-task input {
+    padding: 12px;
+    margin-right: 10px;
+    border-radius: 8px;
+    border: 2px solid #ddd;
+    width: 75%;
+    font-size: 1em;
 }
 
 .add-task input:focus {
     outline: none;
-    border-color: #ff7043; /* Cor de foco no campo de input */
+    border-color: #ff7043; /* Cor do foco */
 }
 
-.add-task button:focus {
-    outline: none;
-    background-color: #ff5722;
+.add-btn {
+    background-color: #3e2723;
+    padding: 12px 20px;
+    border-radius: 50px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.add-btn:hover {
+    background-color: #ff7043;
+}
+
+/* Estilos de Responsividade */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    .task-item {
+        font-size: 0.9em;
+    }
+
+    .add-task input {
+        width: 70%;
+    }
+
+    .add-btn {
+        padding: 8px 15px;
+    }
 }
