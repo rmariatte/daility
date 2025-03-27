@@ -1,59 +1,102 @@
+/* Resetando alguns estilos para um padrão mais limpo */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+/* Estilo para o corpo e fundo */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-    color: #333;
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f0e1; /* Cor de fundo marrom suave */
+  color: #4f4f4f; /* Texto escuro para contraste */
+  padding: 20px;
 }
 
+/* Header com título */
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #6f4f1e; /* Tom marrom escuro */
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* Caixa de tarefas e estrutura de conteúdo */
 .container {
-    max-width: 900px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: white;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-h1, h2 {
-    text-align: center;
-    margin-bottom: 20px;
+/* Cada dia da semana */
+.day {
+  margin-bottom: 30px;
+  background-color: #d9c4a5; /* Tom marrom claro */
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-ul {
-    list-style-type: none;
-    margin-bottom: 20px;
+.day h2 {
+  font-size: 2rem;
+  color: #6f4f1e;
+  margin-bottom: 15px;
+  text-align: center;
 }
 
-li {
-    padding: 10px;
-    background-color: #efefef;
-    margin: 5px 0;
+/* Estilo das listas de tarefas */
+.task-list {
+  list-style: none;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-input, button {
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 button {
-    cursor: pointer;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
+  background-color: #6f4f1e;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
 }
 
 button:hover {
-    background-color: #45a049;
+  background-color: #4e2c19;
 }
+
+/* Adicionando margens e espaciamento */
+.add-task {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.add-task input {
+  padding: 10px;
+  width: 80%;
+  border-radius: 5px;
+  border: 1px solid #d9c4a5;
+}
+
+.add-task button {
+  width: 15%;
+}
+
+footer {
+  margin-top: 50px
